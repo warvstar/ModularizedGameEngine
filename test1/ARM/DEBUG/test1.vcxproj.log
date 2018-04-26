@@ -1,0 +1,14 @@
+﻿  Line:0
+  starting.
+  getArgs took 0 milliseconds.
+  getFiles took 0 milliseconds.
+  CompileNodes took 0 milliseconds.
+  Compiled 0 files.
+  Starting link:
+ld.lld.exe : error : undefined symbol: android_main
+  >>> referenced by android_native_app_glue.c:233 (C:\NVPACK\android-sdk\ndk-bundle\sources\android\native_app_glue\android_native_app_glue.c:233)
+  >>>               android_native_app_glue.c.o:(android_app_entry) in archive libnative_app_glue.a
+    --sysroot=C:/ANDROID/platforms/android-27/arch-arm -X --eh-frame-hdr -m armelf_linux_eabi -shared -o ../ARM/Debug/libnative-activity.so -LC:/ANDROID/android-ndk-r17-beta2\toolchains\arm-linux-androideabi-4.9\prebuilt\windows\arm-linux-androideabi\lib\armv7-a\thumb -LC:/ANDROID/android-ndk-r17-beta2\toolchains\llvm\prebuilt\windows\lib\clang\6.0.2\lib\linux\arm -LC:/ANDROID/android-ndk-r17-beta2/platforms/android-27/arch-arm/usr/lib -LC:/ANDROID/android-ndk-r17-beta2/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a -LC:/ANDROID/android-ndk-r17-beta2\toolchains\arm-linux-androideabi-4.9\prebuilt\windows\lib\gcc\arm-linux-androideabi\4.9.x\armv7-a\thumb  C:/ANDROID/android-ndk-r17-beta2/platforms/android-27/arch-arm/usr/lib/crtbegin_so.o -landroid -lEGL libnative_app_glue.a -lGLESv3 -latomic -lm -llog -lc++ -lc++abi -lgcc -ldl -lc C:/ANDROID/android-ndk-r17-beta2/platforms/android-27/arch-arm/usr/lib/crtend_so.o -O0 -u ANativeActivity_onCreate -build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now -soname ../ARM/Debug/libnative-activity.soUnsuccesful link.
+  Clean exit.
+  16483101452029207956
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3073: The command "buildtool.exe vs Project5" exited with code 1.

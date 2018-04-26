@@ -1,0 +1,12 @@
+﻿  Line:0
+  starting.
+  getArgs took 0 milliseconds.
+  getFiles took 0 milliseconds.
+  Starting compile:Core.cpp
+  CompileNodes took 0 milliseconds.
+  Compiled 1 files.
+  Starting link:
+   -Xlinker -export-all-symbols -nostdlib -msse4.1 -fuse-ld=lld ./x64/Release/Engine.pcm.o ./x64/Release/Renderer.pcm.o ./x64/Release/Helper.pcm.o ./x64/Release/Core.pcm.o ./x64/Release/ResourceManager.pcm.o ./x64/Release/Shader.pcm.o ./x64/Release/sol.pcm.o ./x64/Release/Buffer.pcm.o ./x64/Release/TriangleObject.pcm.o ./x64/Release/Object.pcm.o ./x64/Release/std.core.pcm.o ./x64/Release/Buffer.cpp.o ./x64/Release/Core.cpp.o ./x64/Release/TriangleObject.cpp.o ./x64/Release/Object.cpp.o ./x64/Release/Shader.cpp.o  -shared -o ../x64/Release/core.so -LC:/Engine/ChaiScript/build/Release -LC:/Engine/rttr/build/lib/MinSizeRel -LC:/Engine/ponder/build/MinSizeRel -LC:/Engine/cpgf/lib/MinSizeRel -L"C:/Program Files (x86)/FMOD SoundSystem/FMOD Studio API Windows/api/lowlevel/lib" -L"c:/Program Files (x86)/Windows Kits/10/Lib/10.0.16299.0/um/x64" -LC:/Engine/Includes/gsa-1.0.2/lib/win64 -LC:/Projects/FutureEngine/x64/Release -L"C:/Engine/Includes/zstd/build/VS2010/x64/Release" -L../libs/Release/Win64 -L -lstdlib.lib -lmsvcrt.lib -m64 --target=x86_64-windows-msvc -std=c++17 -O0 -g2Link took 0 milliseconds.
+  Setting project files.
+  15602044410258233694
+  Packaging project.

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+    <AndroidDeviceID />
+    <PackagePath>C:\Users\warvs\source\repos\Project5\ARM\Debug\native-activity.apk</PackagePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+    <AndroidDeviceID>710KPMZ0498883;taimen</AndroidDeviceID>
+    <PackagePath>C:\Users\warvs\source\repos\Project5\ARM\Debug\native-activity.apk</PackagePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerWorkingDirectory>..\x64\Release</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

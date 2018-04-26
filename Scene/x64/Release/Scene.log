@@ -1,0 +1,6 @@
+﻿  Line:0
+  starting.
+  Debug directory does not exist:
+  Clean exit.
+  
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(50,5): error MSB3073: The command "buildtool.exe vs scene clean" exited with code 1.

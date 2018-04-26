@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="TriangleObject.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Buffer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="args.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core.cppm" />
+    <None Include="..\test1\sol.cppm" />
+    <None Include="std.core.cppm" />
+    <None Include="..\Engine\Engine.cppm" />
+    <None Include="..\Renderer\Renderer.cppm" />
+    <None Include="Object.cppm" />
+    <None Include="..\Engine\ResourceManager.cppm" />
+    <None Include="TriangleObject.cppm" />
+    <None Include="Shader.cppm" />
+    <None Include="Buffer.cppm" />
+    <None Include="..\Engine\Helper.cppm" />
+    <None Include="..\x64\Release\triangleShader.fs" />
+    <None Include="..\x64\Release\triangleShader.vs" />
+    <None Include="..\x64\Release\shinyShader.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="luadefines.h" />
+  </ItemGroup>
+</Project>

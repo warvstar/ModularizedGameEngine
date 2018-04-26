@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="args.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gl.cppm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl3defines.h" />
+  </ItemGroup>
+</Project>

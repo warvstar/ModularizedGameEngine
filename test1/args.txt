@@ -1,0 +1,88 @@
+//This file works by setting platform name, compile args, compile mod args then linker args
+platform:win32:common
+var aapt:C:\NVPACK\android-sdk\build-tools\27.0.0\aapt.exe
+var pack:$aapt package -v -f -I "$androidsdk\platforms\$androidrev\android.jar"
+var dx:C:\NVPACK\android-sdk\build-tools\27.0.0\dx.bat
+var javac:javac.exe -classpath "$androidsdk\platforms\$androidrev\android.jar"
+var androidrev:android-21
+var windowssdk:C:\Program Files (x86)\Windows Kits\10
+var appname:Project5
+platform:android:debug
+compiler:C:\LLVM6\bin\clang++.exe
+linker:C:\LLVM6\bin\clang++.exe
+outfile:app.exe
+outdir:../x64/Release/
+debugdir:./x64/Release/
+scripter:no
+includes: {
+C:\Engine\ChaiScript\include
+C:\Engine\ponder\include
+C:\Engine\cpgf\include
+C:\Engine\rttr\src
+C:\Engine\rttr\build\src
+"C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc"
+C:\Engine\Includes\glew-2.1.0\include
+C:\Engine\Includes\gsa-1.0.2\include
+"c:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\um"
+"C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\shared"
+../includes
+C:\Engine\Includes\glm\glm
+C:\Engine\Includes\glew-2.1.0\include\GL
+C:\Engine\PhysX_3.4\PhysX_3.4\Source\Common\src
+C:\Engine\PhysX_3.4\PxShared\src\pvd\include
+C:\Engine\PhysX_3.4\PxShared\src\fastxml\include
+C:\Engine\PhysX_3.4\PxShared\src\foundation\include
+C:\Engine\PhysX_3.4\PhysX_3.4\Source\Common\include
+C:\Engine\PhysX_3.4\PxShared\include
+C:\Engine\PhysX_3.4\Externals\nvToolsExt\1\include
+C:\Engine\PhysX_3.4\PhysX_3.4\Include
+C:\Engine\Includes\lz4\lib
+C:\ISPC
+C:\Engine\lua2
+}
+libDirs: {
+C:/Engine/ChaiScript/build/Release
+C:/Engine/rttr/build/lib/MinSizeRel
+C:/Engine/ponder/build/MinSizeRel
+C:/Engine/cpgf/lib/MinSizeRel
+"C:/Program Files (x86)/FMOD SoundSystem/FMOD Studio API Windows/api/lowlevel/lib"
+"c:/Program Files (x86)/Windows Kits/10/Lib/10.0.16299.0/um/x64"
+C:/Engine/Includes/gsa-1.0.2/lib/win64
+C:/Projects/FutureEngine/x64/Release
+"C:/Engine/Includes/zstd/build/VS2010/x64/Release"
+../libs/Release/Win64
+
+}
+libs: {
+stdlib.lib
+msvcrt.lib
+kernel32.lib
+user32.lib
+opengl32.lib
+gdi32.lib
+} 
+excludelibs {
+}
+moduleDirs: {
+}
+defines: {
+GLEW_STATIC
+UNICODE
+_UNICODE
+USINGMODULES
+WIN32
+NDEBUG
+_MT
+_DLL
+VC_EXTRALEAN
+WIN32_LEAN_AND_MEAN
+_WIN32_WINNT_WIN8
+_WIN32_WINNT=0x0602
+_WINSOCK_DEPRECATED_NO_WARNINGS
+EXPORT=
+}
+compileArgs: -fcxx-exceptions -Wno-everything -msse4.1 -Wno-c++11-narrowing -fno-ms-compatibility -Wno-unused-command-line-argument -Wno-pragma-pack -Wno-nonportable-include-path -fno-delayed-template-parsing -c $infile -o $outfile $defines -fmodules-ts $includes -m64 --target=x86_64-windows-msvc -std=c++17 -O0 -g2 -gcodeview
+compileModArgs: -fcxx-exceptions -Wno-everything -msse4.1 -Wno-c++11-narrowing -fno-ms-compatibility -Wno-unused-command-line-argument -Wno-pragma-pack -Wno-nonportable-include-path -fno-delayed-template-parsing -c $infile -o $outfile $defines -fmodules-ts $includes -m64 --target=x86_64-windows-msvc -std=c++17 -O0 -g2 -gcodeview
+linkArgs: -fcxx-exceptions -Xlinker -export-all-symbols -msse4.1 -fuse-ld=lld $infile -o $outfile $libDirs $libs -m64 --target=x86_64-windows-msvc -std=c++17 -O0 -g2
+package: {
+}
