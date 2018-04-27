@@ -2,7 +2,7 @@ module Renderer;
 import std.core;
 import glew;
 import Engine;
-#include "glewdefines.h"
+#include "glewdefines.hpp"
 #define Log(...) printf(__VA_ARGS__)
 #define CheckGLError() _CheckGLError(__FILE__, __LINE__)
 void _CheckGLError(const char* file, int line) {

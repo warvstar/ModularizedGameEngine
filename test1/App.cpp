@@ -4,10 +4,10 @@ import sol;
 import Core;
 import Engine;
 import Renderer;
-#include "windowdefines.h"
+#include "windowdefines.hpp"
 import glew;
-#include "../Renderer/glewdefines.h"
-#include "wglewdefines.h"
+#include "../Renderer/glewdefines.hpp"
+#include "wglewdefines.hpp"
 typedef void* create_t(Engine* engine);
 std::unordered_map<std::string, HMODULE> map;
 std::unordered_map<std::string, create_t*> map2;
