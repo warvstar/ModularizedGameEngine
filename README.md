@@ -11,10 +11,10 @@ buildtool https://github.com/warvstar/buildtool
 At the moment I don't see my self adding to this very much, its just a simple proof of concept.
 
 It's missing allot of things a real game engine would use, such as:
-A proper scenegraph
-Networking
-Sound
-Input(for anything other than windows)
+- [ ] A proper scenegraph
+- [ ] Networking
+- [ ] Sound
+- [ ] Input(for anything other than windows)
 
 
 This can easily be ported to msvc, I use my custom tools for convenience and clang for easier Android development.
